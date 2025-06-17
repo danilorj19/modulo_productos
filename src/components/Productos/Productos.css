@@ -1,0 +1,121 @@
+
+.contenedor-productos {
+  padding: 20px;
+  background-color: #a8e6f5;
+  max-width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Barra de búsqueda y botones */
+.barra-superior {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.buscador {
+  flex: 1;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+.botones-superiores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.boton {
+  padding: 10px 14px;
+  background-color: #fefffe;
+  color: rgb(3, 3, 3);
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.boton:hover {
+  background-color: #8bcbf7;
+}
+
+/* Tabla responsiva */
+.tabla-responsiva {
+  overflow-x: auto;
+}
+
+.tabla-productos {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabla-productos th,
+.tabla-productos td {
+    background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.tabla-productos th {
+  background-color: #f2f2f2;
+  
+}
+
+.boton-accion {
+  margin: 2px;
+  padding: 6px 10px;
+  font-size: 14px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.boton-accion.eliminar {
+  background-color: #f44336;
+}
+
+.boton-accion:hover {
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .barra-superior {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .botones-superiores {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .boton,
+  .buscador {
+    width: 100%;
+  }
+
+  .boton-accion {
+    width: 48%;
+    margin: 5px 1%;
+  }
+}
+
